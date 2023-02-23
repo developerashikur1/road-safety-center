@@ -1,0 +1,70 @@
+.header-container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.header-lang-search-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  justify-content: end;
+}
+
+.header-lang-search-container > p {
+  color: white !important;
+}
+
+.header-lang-search-container > button {
+  color: white !important;
+}
+
+.header-menus-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.header-menus-container > div {
+  border-bottom: 1px solid #00887d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.header-menus-container > div a {
+  text-decoration: none;
+}
+
+.header-menu-btn {
+  color: #ffffff !important;
+  font-size: 1.875rem !important;
+  text-transform: none !important;
+  border-radius: 0 !important;
+  border-bottom: 4px solid transparent !important;
+  transition: all 0.5s !important;
+}
+
+.header-menu-btn:hover {
+  color: #00a89b !important;
+  border-bottom: 4px solid #00a89b !important;
+  transition: all 0.3s !important;
+}
+
+.header-menus-container > div .activated {
+  color: #00a89b !important;
+  border-bottom: 4px solid #00a89b !important;
+  transition: all 0.3s !important;
+}
+
+.header-menu-logo-container {
+  text-align: right;
+}
+
+.header-menu-logo-container img {
+  height: 5rem;
+}

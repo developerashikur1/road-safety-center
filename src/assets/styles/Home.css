@@ -1,0 +1,34 @@
+/* text slider section start */
+.text-slider-container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.text-swiper-slider {
+  /* background-color: green; */
+}
+.text-swiper-slider > .swiper-button-prev:after {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+.text-swiper-slider > .swiper-button-next:after {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.text-swiper-slider_content-Box {
+  min-height: 14rem;
+}
+.text-swiper-slider_content-Box > h4 {
+  color: #ffffff !important;
+  font-size: 2.5rem;
+  text-align: right;
+}
+.text-swiper-slider_content-Box > p {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-top: 1.5rem;
+}
+/* text slider section end */

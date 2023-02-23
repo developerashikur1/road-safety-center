@@ -1,0 +1,35 @@
+.news-popup-container {
+}
+.news-popup-container > button {
+  /* height: 3.5rem; */
+  border-radius: 50% !important;
+  margin-top: -100px;
+  margin-left: -15px;
+}
+.news-popup-container > button img {
+  height: 3.5rem;
+}
+
+.news-popup-elements {
+  height: 100%;
+  margin-top: -20px;
+  overflow-y: scroll;
+}
+.news-popup_media img {
+  width: 100%;
+}
+
+.news-popup_contents {
+  padding: 2.5rem;
+}
+.news-popup_contents > h4 {
+  color: #000;
+  font-size: 2.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+.news-popup_contents > p {
+  margin-top: 2.5rem;
+  text-align: right;
+  font-size: 1.5rem;
+}
