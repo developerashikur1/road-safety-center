@@ -42,7 +42,8 @@
 
 .header-menu-btn {
   color: #ffffff !important;
-  font-size: 1.875rem !important;
+  /* font-size: 1.875rem !important; */
+  font-size: 1.25rem !important;
   text-transform: none !important;
   border-radius: 0 !important;
   border-bottom: 4px solid transparent !important;

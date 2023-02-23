@@ -25,13 +25,12 @@ const Header = () => {
                     </Grid>
                     <Grid item xs={6}>
                         <Box className='header-menus-container'>
-                            <Box>  
-                                <Link to="/"><Button onClick={() => handleChange(1)} className={`header-menu-btn ${active === 1 && 'activated'}`} variant="text">Text</Button></Link>
-                                <Link to="/"><Button onClick={() => handleChange(2)} className={`header-menu-btn ${active === 2 && 'activated'}`} variant="text">Text</Button></Link>
-                                <Link to="/"><Button onClick={() => handleChange(3)} className={`header-menu-btn ${active === 3 && 'activated'}`} variant="text">Text</Button></Link>
-                                <Link to="/"><Button onClick={() => handleChange(4)} className={`header-menu-btn ${active === 4 && 'activated'}`} variant="text">Text</Button></Link>
-                                <Link to="/"><Button onClick={() => handleChange(4)} className={`header-menu-btn ${active === 5 && 'activated'}`} variant="text">Text</Button></Link>
-                                <Link to="/"><Button onClick={() => handleChange(6)} className={`header-menu-btn ${active === 6 && 'activated'}`} variant="text">Text</Button></Link>
+                            <Box>
+                                <Link to="/"><Button onClick={() => handleChange(2)} className={`header-menu-btn ${active === 2 && 'activated'}`} variant="text">المركز الإعلامي</Button></Link>
+                                <Link to="/"><Button onClick={() => handleChange(3)} className={`header-menu-btn ${active === 3 && 'activated'}`} variant="text">خدماتنا</Button></Link>
+                                <Link to="/"><Button onClick={() => handleChange(4)} className={`header-menu-btn ${active === 4 && 'activated'}`} variant="text">مكتبة</Button></Link>
+                                <Link to="/"><Button onClick={() => handleChange(4)} className={`header-menu-btn ${active === 5 && 'activated'}`} variant="text">عن المركز</Button></Link>
+                                <Link to="/"><Button onClick={() => handleChange(6)} className={`header-menu-btn ${active === 6 && 'activated'}`} variant="text">الصفحة الرئيسية</Button></Link>
                             </Box>
                         </Box>
                     </Grid>
