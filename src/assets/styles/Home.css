@@ -22,13 +22,91 @@
 }
 .text-swiper-slider_content-Box > h4 {
   color: #ffffff !important;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-align: right;
 }
 .text-swiper-slider_content-Box > p {
   color: #ffffff !important;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: right;
   margin-top: 1.5rem;
 }
 /* text slider section end */
+
+/* card slider container start */
+.card-slider-container {
+  /* height: 120px; */
+}
+/* .card-swiper-container {
+  width: 100%;
+} */
+
+.card-swiper-slider > .swiper-wrapper .swiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card-swiper-slider > .swiper-wrapper .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.card-swiper-slider > .swiper-wrapper .swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+/* .card-swiper-slider > .swiper-wrapper .swiper-slide-active {
+  z-index: 1;
+}
+.card-swiper-slider > .swiper-wrapper .swiper-slide-next {
+  margin-left: -185px;
+} */
+
+/* card slider container end */
+
+/* hero swiper slider start */
+.hero-swiper-slider-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-swiper-slider-container .swiper-slide {
+  height: 540px;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-swiper-slider-container .swiper-slide:nth-child(1) {
+  background-color: rgba(0, 128, 0, 0.362);
+}
+.hero-swiper-slider-container .swiper-slide:nth-child(2) {
+  background-color: rgba(0, 0, 255, 0.295);
+}
+.hero-swiper-slider-container .swiper-slide:nth-child(3) {
+  background-color: rgba(255, 0, 0, 0.281);
+}
+.hero-swiper-slider-container .swiper-slide:nth-child(4) {
+  background-color: rgba(255, 255, 0, 0.54);
+}
+.hero-swiper-slider-container .swiper-slide:nth-child(5) {
+  background-color: rgba(255, 192, 203, 0.506);
+}
+
+.hero-swiper-slider-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* hero swiper slider end */

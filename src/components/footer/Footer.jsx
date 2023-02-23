@@ -27,7 +27,7 @@ const Footer = () => {
                             </Box>  
                         </Box>
                     </Grid>
-                    <Grid item xs={2.75}>
+                    <Grid item xs={2.85}>
                         <Box className='footer-contacts-container'>
                             <Typography variant='h4'>معلومات التواصل</Typography>
                             <Box className='footer-contact_content'>
@@ -44,7 +44,7 @@ const Footer = () => {
                             </Box>
                         </Box>
                     </Grid>
-                    <Grid item xs={2.75}>
+                    <Grid item xs={2.65}>
                         <Box className='footer-external-links-container'>
                             <Typography variant='h4'>روابط خارجية</Typography>
                             <Link to='/'><Typography>وزارة النقل والخدمات اللوجستية</Typography></Link>
@@ -54,7 +54,7 @@ const Footer = () => {
                             <Link to='/'><Typography>وزارة التعليم</Typography></Link>
                         </Box>
                     </Grid>
-                    <Grid item xs={2.75}>
+                    <Grid item xs={2}>
                         <Box className='footer-quick-links-container'>
                             <Typography variant='h4'>روابط سريعة</Typography>
                             <Link to='/'><Typography>عن المركز</Typography></Link>
@@ -64,7 +64,7 @@ const Footer = () => {
                             <Link to='/'><Typography>التوعية</Typography></Link>
                         </Box>
                     </Grid>
-                    <Grid item xs={1}>
+                    <Grid item xs={1.55}>
                         <Box className='footer-logo-container'>
                             <img src={footerLogo} alt="" />
                         </Box>
