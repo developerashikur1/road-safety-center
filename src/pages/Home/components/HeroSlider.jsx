@@ -15,6 +15,13 @@ import heroImg5 from '../../../assets/images/hero-slider/heroimg-5.jpg';
 import '../../../assets/styles/Home.css';
 
 
+const heroSlidersImage = [
+    {id:1, img: heroImg1},
+    {id:2, img: heroImg2},
+    {id:3, img: heroImg3},
+    {id:4, img: heroImg4},
+    {id:5, img: heroImg5},
+]
 
 
 
@@ -28,11 +35,11 @@ const HeroSlider = () => {
                     modules={[Pagination]} 
                     className="hero-swiper-slider"
                 >
-                    <SwiperSlide><img src={heroImg1} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={heroImg2} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={heroImg3} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={heroImg4} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={heroImg5} alt="" /></SwiperSlide>
+                    {heroSlidersImage.map((hero) => 
+                        <SwiperSlide key={hero.id}>
+                            <img src={hero.img} alt="" />
+                        </SwiperSlide>
+                    )}
                 </Swiper>
             </Box>
         </>

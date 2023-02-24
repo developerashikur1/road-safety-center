@@ -63,20 +63,18 @@
 } */
 
 .card-slider-container .swiper {
-  width: 40%;
+  width: 50%;
   height: 100%;
 }
 
 .card-slider-container .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
   min-height: 380px;
 
   /* Center slide text vertically */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
 }
 
 .card-swiper-slider {
@@ -89,21 +87,141 @@
   object-fit: cover;
 }
 .card-slider-container .swiper-slide-prev {
+  background-color: #ffffff;
   z-index: 9 !important;
 }
 .card-slider-container .swiper-slide-active {
+  background-color: #ffffff;
   z-index: 10 !important;
 }
 .card-slider-container .swiper-slide-next {
+  background-color: #00a89b;
   z-index: 9 !important;
 }
 .card-slider-container .swiper-slide-next + .swiper-slide {
+  background-color: #00887d;
   z-index: 8 !important;
 }
 .card-slider-container .swiper-slide-next + .swiper-slide + .swiper-slide {
+  background-color: #00887d;
   z-index: -7 !important;
 }
 
+.card-slider-box {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.card-slider_header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-slider_author {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.card-slider_author > h4 {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.card-slider_author > p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.card-slider_header > button {
+  margin-left: auto;
+}
+
+.card-slider_body {
+  margin-top: 5rem;
+  text-align: right;
+}
+.card-slider_body > h4 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.card-slider_body > p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.card-slider_media {
+  margin-top: 2.5rem;
+  max-height: 10rem;
+  width: 100%;
+  overflow: hidden;
+}
+.card-slider_media > p {
+  font-size: 1rem;
+  color: #00887d;
+  text-align: left;
+  margin-bottom: 0.5rem;
+  /* object-fit: contain; */
+}
+.card-slider_media > img {
+  border-radius: 10px;
+
+  /* object-fit: contain; */
+}
+
+/* .card-swiper-slider .swiper-button-prev {
+  height: 5px;
+  width: 5px;
+}
+.card-swiper-slider .swiper-button-prev:after {
+  content: url("../images/arrow.png");
+
+  height: 50px;
+  width: 50px;
+} */
+
+.card-swiper-slider .swiper-button-prev:after {
+  content: url("../images/arrow.png");
+  transform: scale(0.05) scaleX(-1);
+  /* padding: 2rem; */
+  /* background-color: #ffffff; */
+  text-align: center;
+  margin-left: -0.1rem;
+}
+.card-swiper-slider .swiper-button-prev {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s;
+}
+.card-swiper-slider .swiper-button-prev:hover {
+  background-color: #00a89b !important;
+}
+/* .card-swiper-slider .swiper-button-prev:hover:after {
+    background-color: #00a89b !important;
+} */
+.card-swiper-slider .swiper-button-next:after {
+  content: url("../images/arrow.png");
+  transform: scale(0.05);
+  margin-right: -0.1rem;
+  text-align: center;
+  /* padding: 2rem; */
+  /* background-color: #ffffff;
+  border-radius: 50%; */
+}
+.card-swiper-slider .swiper-button-next {
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: all 0.2s;
+}
+.card-swiper-slider .swiper-button-next:hover {
+  background-color: #00a89b !important;
+}
 /* card slider container end */
 
 /* hero swiper slider start */
@@ -122,22 +240,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.hero-swiper-slider-container .swiper-slide:nth-child(1) {
-  background-color: rgba(0, 128, 0, 0.362);
-}
-.hero-swiper-slider-container .swiper-slide:nth-child(2) {
-  background-color: rgba(0, 0, 255, 0.295);
-}
-.hero-swiper-slider-container .swiper-slide:nth-child(3) {
-  background-color: rgba(255, 0, 0, 0.281);
-}
-.hero-swiper-slider-container .swiper-slide:nth-child(4) {
-  background-color: rgba(255, 255, 0, 0.54);
-}
-.hero-swiper-slider-container .swiper-slide:nth-child(5) {
-  background-color: rgba(255, 192, 203, 0.506);
 }
 
 .hero-swiper-slider-container .swiper-slide img {

@@ -1,9 +1,8 @@
-import ArrowLeftRoundedIcon from '@mui/icons-material/ArrowLeftRounded';
-import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded';
-import { Box, IconButton } from '@mui/material';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import { Avatar, Box, IconButton, Typography } from '@mui/material';
 import React from 'react';
 // import required modules
-import { Navigation, Pagination } from "swiper";
+import { Navigation } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -14,53 +13,58 @@ import '../../../assets/styles/Home.css';
 
 
 const sliderImages =[
-    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />,
+    {id:1, img:"https://swiperjs.com/demos/images/nature-1.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
+    {id:2, img:"https://swiperjs.com/demos/images/nature-2.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
+    {id:3, img:"https://swiperjs.com/demos/images/nature-4.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
+    {id:4, img:"https://swiperjs.com/demos/images/nature-3.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
+    {id:5, img:"https://swiperjs.com/demos/images/nature-5.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
+    {id:6, img:"https://swiperjs.com/demos/images/nature-6.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
+    {id:7, img:"https://swiperjs.com/demos/images/nature-7.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
+    {id:8, img:"https://swiperjs.com/demos/images/nature-8.jpg", title:"عن المركز", content:"تأسس المركز الوطني لسلامة الطرق في اكتوبر 2018.ويعدالمركز أحد مشاريع مبادرة سلامة الطرق لتقليل وفيات حوادث السير ضمن برنامج التحول الوطني 2020.ويهدف إلى تحسين مستويات السلامة المرورية من خلال التنسيق بين الجهات المعنية وتقديم الدعم الفني،وإعدادوتنفيذ نظام بيانات سلامة الطرق وتحديدألية جمع البيانات ذات الصلة."},
 ];
 
 const CardSlider = () => {
     return (
         <>
             <Box className='card-slider-container'>
-                {/* <Grid container spacing={0}>
-                    <Grid item xs={3}></Grid>
-                    <Grid item xs={6}> */}
-                    <Swiper
-                        slidesPerView={3}
-                        spaceBetween={-280}
-                        pagination={{
-                        clickable: true,
-                        }}
-                        navigation={{
-                        clickable: true,
-                        }}
-                        loop={true}
-                        modules={[ Navigation]}
-                        className="card-swiper-slider"
-                    >
-                            {sliderImages.map((img, index) => 
-                            <SwiperSlide key={index}>
-                                <Box >
-                                {img}
+                <Swiper
+                    slidesPerView={3}
+                    spaceBetween={-280}
+                    pagination={{
+                    clickable: true,
+                    }}
+                    navigation={{
+                    clickable: true,
+                    }}
+                    loop={true}
+                    modules={[ Navigation]}
+                    className="card-swiper-slider"
+                >
+                        {sliderImages.map((slider, index) => 
+                        <SwiperSlide key={index}>
+                            <Box className='card-slider-box'>
+                                <Box className='card-slider_header'>
+                                    <Avatar alt="Remy Sharp" src="https://mui.com/static/images/avatar/1.jpg" />
+                                    <Box className='card-slider_author'>
+                                        <Typography variant='h4'>عن المركز</Typography>
+                                        <Typography>@ajelnews24</Typography>
+                                    </Box>
+                                    <IconButton >
+                                        <MoreHorizIcon />
+                                    </IconButton>
                                 </Box>
-                            </SwiperSlide>
-                            )}
-                        </Swiper>
-                    {/* </Grid>
-                    <Grid item xs={3}></Grid>
-                </Grid> */}
-                <IconButton aria-label="delete" size="small">
-                    <ArrowLeftRoundedIcon fontSize="inherit" />
-                </IconButton>
-                <IconButton aria-label="delete" size="small">
-                    <ArrowRightRoundedIcon fontSize="inherit" />
-                </IconButton>
+                                <Box className='card-slider_body'>
+                                     <Typography variant='h4'>{slider.title}</Typography>
+                                     <Typography>{slider.content}</Typography>
+                                </Box>
+                                <Box className='card-slider_media'>
+                                    <Typography>Translate Tweet</Typography>
+                                    <img src={slider.img} alt="" />
+                                </Box>
+                            </Box>
+                        </SwiperSlide>
+                        )}
+                </Swiper>
             </Box>
         </>
     );
