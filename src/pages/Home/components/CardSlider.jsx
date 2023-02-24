@@ -1,7 +1,9 @@
-import { Box } from '@mui/material';
+import ArrowLeftRoundedIcon from '@mui/icons-material/ArrowLeftRounded';
+import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded';
+import { Box, IconButton } from '@mui/material';
 import React from 'react';
 // import required modules
-import { EffectCoverflow, Pagination } from "swiper";
+import { Navigation, Pagination } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-coverflow";
@@ -9,7 +11,6 @@ import "swiper/css/pagination";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import '../../../assets/styles/Home.css';
-
 
 
 const sliderImages =[
@@ -21,7 +22,6 @@ const sliderImages =[
     <img src="https://swiperjs.com/demos/images/nature-6.jpg" />,
     <img src="https://swiperjs.com/demos/images/nature-7.jpg" />,
     <img src="https://swiperjs.com/demos/images/nature-8.jpg" />,
-    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />,
 ];
 
 const CardSlider = () => {
@@ -32,19 +32,16 @@ const CardSlider = () => {
                     <Grid item xs={3}></Grid>
                     <Grid item xs={6}> */}
                     <Swiper
-                        effect={"coverflow"}
-                        grabCursor={true}
-                        centeredSlides={true}
-                        slidesPerView={"auto"}
-                        coverflowEffect={{
-                        rotate: 0,
-                        stretch: 0,
-                        depth: 50,
-                        modifier: 8,
-                        slideShadows: true,
+                        slidesPerView={3}
+                        spaceBetween={-280}
+                        pagination={{
+                        clickable: true,
                         }}
-                        pagination={true}
-                        modules={[EffectCoverflow, Pagination]}
+                        navigation={{
+                        clickable: true,
+                        }}
+                        loop={true}
+                        modules={[ Navigation]}
                         className="card-swiper-slider"
                     >
                             {sliderImages.map((img, index) => 
@@ -58,6 +55,12 @@ const CardSlider = () => {
                     {/* </Grid>
                     <Grid item xs={3}></Grid>
                 </Grid> */}
+                <IconButton aria-label="delete" size="small">
+                    <ArrowLeftRoundedIcon fontSize="inherit" />
+                </IconButton>
+                <IconButton aria-label="delete" size="small">
+                    <ArrowRightRoundedIcon fontSize="inherit" />
+                </IconButton>
             </Box>
         </>
     );

@@ -34,12 +34,15 @@
 /* text slider section end */
 
 /* card slider container start */
-.card-slider-container {
-  /* height: 120px; */
+/* .card-slider-container {
+  border: 2px solid red !important;
 }
-/* .card-swiper-container {
-  width: 100%;
-} */
+
+.card-swiper-slider {
+  padding-right: 260px;
+  border: 1px solid green;
+  width: 20%;
+}
 
 .card-swiper-slider > .swiper-wrapper .swiper {
   width: 100%;
@@ -57,14 +60,49 @@
 .card-swiper-slider > .swiper-wrapper .swiper-slide img {
   display: block;
   width: 100%;
+} */
+
+.card-slider-container .swiper {
+  width: 40%;
+  height: 100%;
 }
 
-/* .card-swiper-slider > .swiper-wrapper .swiper-slide-active {
-  z-index: 1;
+.card-slider-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  min-height: 380px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.card-swiper-slider > .swiper-wrapper .swiper-slide-next {
-  margin-left: -185px;
-} */
+
+.card-swiper-slider {
+}
+
+.card-slider-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card-slider-container .swiper-slide-prev {
+  z-index: 9 !important;
+}
+.card-slider-container .swiper-slide-active {
+  z-index: 10 !important;
+}
+.card-slider-container .swiper-slide-next {
+  z-index: 9 !important;
+}
+.card-slider-container .swiper-slide-next + .swiper-slide {
+  z-index: 8 !important;
+}
+.card-slider-container .swiper-slide-next + .swiper-slide + .swiper-slide {
+  z-index: -7 !important;
+}
 
 /* card slider container end */
 
@@ -169,3 +207,38 @@
   font-weight: 900;
 }
 /* institute slider container end */
+
+/* test slider */
+
+.test-slider-container .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.test-slider-container .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 180px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.test-slider-container .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.test-slider-container .swiper-slide-active {
+  z-index: 3 !important;
+}
+.test-slider-container .swiper-slide-next {
+  z-index: 2 !important;
+}
+.test-slider-container .swiper-slide-next + .swiper-slide {
+  z-index: 1 !important;
+}
