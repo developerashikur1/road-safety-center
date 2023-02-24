@@ -61,7 +61,35 @@
   display: block;
   width: 100%;
 } */
+.card-tab-panel-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+.card-tab-panel-container > div {
+  border-bottom: 1px solid rgba(0, 168, 154, 0.5);
+}
+.card-tab-panel_btns button {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-transform: none;
+}
+.card-tab-panel_btns button:hover {
+  color: #00a89b !important;
+  font-size: 1.5rem;
+  text-transform: none;
+}
+.card-tab-panel_btns .Mui-selected {
+  color: #00a89b !important;
+  font-size: 1.5rem;
+  text-transform: none;
+}
 
+.card-tab-panel_btns .MuiTabs-indicator {
+  background-color: #00a89b !important;
+}
 .card-slider-container .swiper {
   width: 50%;
   height: 100%;
@@ -258,6 +286,14 @@
   padding-right: 2.5rem;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+}
+
+.institute-slider_title > p {
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
 }
 
 .institute-slider-contianer .swiper {

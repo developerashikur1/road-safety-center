@@ -1,4 +1,4 @@
-import { Box } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import React from 'react';
 // import required modules
 import { FreeMode, Navigation } from "swiper";
@@ -39,6 +39,11 @@ const instituteContents = [
 const InstituteSlider = () => {
     return (
         <>
+            <Box className='institute-slider_title'>
+                <Typography>
+                شركاؤنا
+                </Typography>
+            </Box>
             <Box className='institute-slider-contianer'>
                 <Swiper
                     slidesPerView={9}

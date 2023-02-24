@@ -1,5 +1,5 @@
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import { Avatar, Box, IconButton, Typography } from '@mui/material';
+import { Avatar, Box, IconButton, Tab, Tabs, Typography } from '@mui/material';
 import React from 'react';
 // import required modules
 import { Navigation } from "swiper";
@@ -24,8 +24,30 @@ const sliderImages =[
 ];
 
 const CardSlider = () => {
+    const [value, setValue] = React.useState('one');
+
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
+    
     return (
         <>
+            <Box className='card-tab-panel-container'>
+                <Box>
+                    <Tabs
+                        value={value}
+                        onChange={handleChange}
+                        textColor="secondary"
+                        indicatorColor="secondary"
+                        aria-label="secondary tabs example"
+                        className='card-tab-panel_btns'
+                    >
+                        <Tab value="one" label="التوعية" />
+                        <Tab value="two" label="الاخبار" />
+                        <Tab value="three" label="الفعاليات" />
+                    </Tabs>
+                </Box>
+            </Box>
             <Box className='card-slider-container'>
                 <Swiper
                     slidesPerView={3}
@@ -71,3 +93,7 @@ const CardSlider = () => {
 };
 
 export default CardSlider;
+
+
+
+
