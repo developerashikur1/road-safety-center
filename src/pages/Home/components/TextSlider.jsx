@@ -1,7 +1,7 @@
     import { Box, Grid, Typography } from '@mui/material';
 import React from 'react';
 // import required modules
-import { Navigation, Pagination } from "swiper";
+import { Navigation } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/navigation";
@@ -33,7 +33,7 @@ const texts =[
                     clickable: true,
                     }}
                     navigation={true}
-                    modules={[Pagination, Navigation]}
+                    modules={[ Navigation]}
                     className="text-swiper-slider"
                 >
                     {texts.map((text) => 
