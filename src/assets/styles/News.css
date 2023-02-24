@@ -33,3 +33,55 @@
   text-align: right;
   font-size: 1.5rem;
 }
+
+/* news form section start */
+.news-form-section-container {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.news-form-parent-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  /* background-color: #005c78; */
+  background-color: #00303f;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.news-form-child-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.news-form-child-container
+  > div
+  .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+  background-color: #ffffff;
+}
+.news-form-child-container > div p {
+  text-align: right;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.news-form-child-container > button {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  height: 3.5rem;
+  margin-top: 1.5rem;
+  border-radius: 0;
+  background-color: #00a89b !important;
+}
+.news-form-child-container > p {
+  text-align: right;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+/* news form section end */

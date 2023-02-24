@@ -15,12 +15,13 @@ const Home = () => {
             <HeroSlider />
             <br /><br />
             <TextSlider />
-            <br /><br />
-            <CardSlider />
             <br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br />
+            <CardSlider />
+            <br /><br />
+            <br /><br /><br /><br /><br />
             <InstituteSlider />
             <br /><br />
            <Footer />

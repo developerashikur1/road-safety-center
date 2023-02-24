@@ -5,14 +5,20 @@ import sliderLeftLogo from '../../assets/images/slider-left-btn.png';
 import '../../assets/styles/News.css';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
+import NewsForm from './components/NewsForm';
 
 const News = () => {
     return (
         <>
             <Header />
+            <br /><br />
+            
+            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <NewsForm />
+            
+            <br /><br /><br /><br />
                 <NewsPopup />
             <Footer />   
         </>
@@ -39,7 +45,7 @@ const style = {
   
 
 function NewsPopup () {
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 

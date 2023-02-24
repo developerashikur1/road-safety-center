@@ -24,6 +24,8 @@ const Header = () => {
                             <Button><SearchIcon /></Button>
                         </Box>
                     </Grid>
+                    <Grid item xs={9}></Grid>
+                    <Grid item xs={3}></Grid>
                     <Grid item xs={6}>
                         <Box className='header-menus-container'>
                             <Box>
