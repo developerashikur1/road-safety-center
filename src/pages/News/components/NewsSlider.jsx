@@ -1,7 +1,9 @@
-import { Box, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import ArrowLeftRoundedIcon from '@mui/icons-material/ArrowLeftRounded';
+import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded';
+import { Box, Card, CardContent, CardMedia, Grid, IconButton, Slider, Typography } from '@mui/material';
 import React, { useState } from 'react';
 // import required modules
-import { Navigation, Pagination } from "swiper";
+import { Navigation } from "swiper";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -9,7 +11,6 @@ import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import newImg1 from '../../../assets/images/news-slider-images/news-img-1.png';
 import '../../../assets/styles/News.css';
-
 
 
 
@@ -45,56 +46,76 @@ const NewsSlider = () => {
                 <Grid container spacing={0}>
                     <Grid item xs={3}></Grid>
                     <Grid item xs={9}>
-                        <Swiper
-                            slidesPerView={4}
-                            spaceBetween={15}
-                            speed={800}
-                            pagination={{
-                            type:'progressbar',
-                            clickable: true,
-                            }}
-                            navigation={{
-                                clickable:true,
-                            }}
-                            modules={[Pagination, Navigation]}
-                            className="mySwiper"
-                            onSlideChange={(e) => setActivateSlider(e.activeIndex)}
-                        >
-                            {newsAllData.map((data, index) =>
-                            <SwiperSlide key={index}>
-                                <Box>
-                                    <Card className='news-card-container' sx={{ maxWidth: 445, minHeight: 380 }}>
-                                        <CardMedia
-                                            sx={{ height: 180 }}
-                                            image={data.img}
-                                            title="green iguana"
-                                        />
-                                        <CardContent>
-                                            <Typography textAlign='right' gutterBottom variant="h5" component="div">
-                                            {data.title}
-                                            </Typography>
-                                            <Typography textAlign='right' variant="body2" color="text.secondary">
-                                            {data.text}
-                                            </Typography>
-                                        </CardContent>
-                                        <Box className='news-card-badge'>
-                                            <Typography variant='h4'>{data.badge[0]}</Typography>
-                                            <Typography>{data.badge[1]}</Typography>
+                        <Box>
+                            <Swiper
+                                slidesPerView={4}
+                                spaceBetween={15}
+                                speed={800}
+                                centeredSlides={true}
+                                navigation={{
+                                    // clickable:true,
+                                    prevEl:'.news-swiper-prev-btn',
+                                    nextEl:'.news-swiper-next-btn',
+                                }}
+                                modules={[ Navigation]}
+                                className="news-swiper-slider-container"
+                                onSlideChange={(e) => setActivateSlider(e.activeIndex)}
+                            >
+                                {newsAllData.map((data, index) =>
+                                <SwiperSlide key={index}>
+                                    <Box>
+                                        <Card className='news-card-container' sx={{ maxWidth: 445, minHeight: 380 }}>
+                                            <CardMedia
+                                                sx={{ height: 180 }}
+                                                image={data.img}
+                                                title="green iguana"
+                                            />
+                                            <CardContent>
+                                                <Typography textAlign='right' gutterBottom variant="h5" component="div">
+                                                {data.title}
+                                                </Typography>
+                                                <Typography textAlign='right' variant="body2" color="text.secondary">
+                                                {data.text}
+                                                </Typography>
+                                            </CardContent>
+                                            <Box className='news-card-badge'>
+                                                <Typography variant='h4'>{data.badge[0]}</Typography>
+                                                <Typography>{data.badge[1]}</Typography>
+                                            </Box>
+                                            <Box className='news-card-overlay'></Box>
+                                        </Card>
+                                    </Box>
+                                </SwiperSlide>
+                                )}
+                            </Swiper>
+                            <Box className='news-swiper-slider-control'>
+                                <Grid alignItems='center' container spacing={0}>
+                                    <Grid item xs={3}></Grid>
+                                    <Grid item xs={3}>
+                                        <Box className='news-slider-btns'>
+                                            <IconButton className='news-swiper-prev-btn' size='small'>
+                                                <ArrowLeftRoundedIcon />
+                                            </IconButton>
+                                            <IconButton className='news-swiper-next-btn' size='small'>
+                                                <ArrowRightRoundedIcon />
+                                            </IconButton>
                                         </Box>
-                                    </Card>
-                                </Box>
-                            </SwiperSlide>
-                            )}
-                        </Swiper>
+                                    </Grid>
+                                    <Grid item xs={6}>
+                                        <Box className='news-swiper-slider-pagination'>
+                                            <Slider 
+                                                speed={800}
+                                                value={(100 / newsAllData.length) * ( activateSlider + 1 ) }
+                                                step={ 100 / newsAllData.length }
+                                                onChange={(e) => console.log(e.target.value)}
+                                            />
+                                        </Box>
+                                    </Grid>
+                                </Grid>
+                            </Box>
+                        </Box>
                     </Grid>
                 </Grid>
-                <Box>
-                    {/* <Slider 
-                        value={(100 / newsAllData.length) * ( activateSlider + 1 ) }
-                        step={ 100 / newsAllData.length }
-                        onChange={(e) => console.log(e.target.value)}
-                    /> */}
-                </Box>
             </Box>
            </Box> 
         </>

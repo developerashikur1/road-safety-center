@@ -106,7 +106,7 @@
   right: 10px;
 }
 .news-card-badge > h4 {
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   font-weight: 600;
   color: #ffffff;
 }
@@ -115,5 +115,57 @@
   font-weight: 400;
   color: #ffffff;
   margin-top: -0.25rem;
+}
+
+.news-card-overlay {
+  background-color: rgba(102, 102, 102, 0.46);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.news-swiper-slider-container .swiper-slide-active .news-card-overlay {
+  display: none !important;
+}
+
+.news-swiper-slider-control {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.news-slider-btns {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 1rem;
+}
+.news-slider-btns button {
+  color: black !important;
+  background-color: #ffffff !important;
+  transition: all 0.3s;
+}
+.news-slider-btns > button .MuiSvgIcon-root {
+  /* font-size: 5rem; */
+  height: 2.8rem;
+  width: 2.8rem;
+}
+.news-slider-btns button:hover {
+  color: #00a89b !important;
+  background-color: #ffffff !important;
+}
+
+.news-swiper-slider-pagination {
+  padding-left: 1.5rem;
+}
+.news-swiper-slider-pagination > .MuiSlider-root .MuiSlider-track {
+  color: #00a89b !important;
+}
+.news-swiper-slider-pagination > .MuiSlider-root .MuiSlider-rail {
+  color: rgba(102, 102, 102) !important;
+}
+.news-swiper-slider-pagination > .MuiSlider-root .MuiSlider-thumb {
+  display: none !important;
 }
 /* news slider end */
