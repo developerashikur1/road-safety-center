@@ -51,6 +51,7 @@ const CardSlider = () => {
             <Box className='card-slider-container'>
                 <Swiper
                     slidesPerView={3}
+                    speed={800}
                     spaceBetween={-280}
                     pagination={{
                     clickable: true,

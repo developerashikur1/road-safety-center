@@ -85,3 +85,9 @@
   font-size: 1.5rem;
 }
 /* news form section end */
+
+/* news slider start */
+.news-card-container {
+  border-radius: 10px !important;
+}
+/* news slider end */

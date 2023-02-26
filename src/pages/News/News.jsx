@@ -6,6 +6,7 @@ import '../../assets/styles/News.css';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import NewsForm from './components/NewsForm';
+import NewsSlider from './components/NewsSlider';
 
 const News = () => {
     return (
@@ -13,7 +14,10 @@ const News = () => {
             <Header />
             <br /><br />
             
-            <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br /><br />
+            
+            <NewsSlider />
+            <br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
             <br /><br /><br /><br /><br /><br /><br /><br /><br />
             <NewsForm />
