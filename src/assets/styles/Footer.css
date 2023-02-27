@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-font: "Open Sans", sans-serif;
+}
+
 .footer-container {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -12,6 +18,7 @@
   gap: 0.75rem;
 }
 .footer-details-container > h4 {
+  font-family: var(--primary-font) !important;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -28,9 +35,11 @@
   flex-direction: row-reverse;
 }
 .footer-locatin_content > p {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
 }
 .footer-locatin_content > .css-i4bv87-MuiSvgIcon-root {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
 }
 
@@ -42,6 +51,7 @@
 }
 .footer-contacts-container > h4 {
   color: #ffffff;
+  font-family: var(--primary-font) !important;
   font-size: 1.25rem;
   font-weight: 600;
 }
@@ -55,9 +65,11 @@
 }
 
 .footer-contact_content > p {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
 }
 .footer-contact_content > .css-i4bv87-MuiSvgIcon-root {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
 }
 
@@ -69,13 +81,16 @@
 }
 .footer-external-links-container > h4 {
   color: #ffffff;
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
   font-weight: 600;
 }
 .footer-external-links-container a {
+  font-family: var(--primary-font) !important;
   text-decoration: none;
 }
 .footer-external-links-container a > p {
+  font-family: var(--primary-font) !important;
   color: #ffffff;
   font-size: 1rem;
 }
@@ -88,6 +103,7 @@
 }
 .footer-quick-links-container > h4 {
   color: #ffffff;
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -96,6 +112,7 @@
 }
 .footer-quick-links-container a > p {
   color: #ffffff;
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
 }
 

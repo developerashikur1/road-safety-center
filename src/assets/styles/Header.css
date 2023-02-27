@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-font: "Open Sans", sans-serif;
+}
+
 .header-container {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -13,11 +19,13 @@
 }
 
 .header-lang-search-container > p {
+  font-family: var(--primary-font) !important;
   color: white !important;
 }
 
 .header-lang-search-container > button {
   color: white !important;
+  font-family: var(--primary-font) !important;
 }
 
 .header-menus-container {
@@ -37,12 +45,14 @@
 }
 
 .header-menus-container > div a {
+  font-family: var(--primary-font) !important;
   text-decoration: none;
 }
 
 .header-menu-btn {
   color: #ffffff !important;
   /* font-size: 1.875rem !important; */
+  font-family: var(--primary-font) !important;
   font-size: 1.25rem !important;
   text-transform: none !important;
   border-radius: 0 !important;

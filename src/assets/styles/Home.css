@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-font: "Open Sans", sans-serif;
+}
+
 /* text slider section start */
 .text-slider-container {
   padding-top: 2.5rem;
@@ -22,11 +28,13 @@
 }
 .text-swiper-slider_content-Box > h4 {
   color: #ffffff !important;
+  font-family: var(--primary-font) !important;
   font-size: 1.5rem;
   text-align: right;
 }
 .text-swiper-slider_content-Box > p {
   color: #ffffff !important;
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
   text-align: right;
   margin-top: 1.5rem;
@@ -35,31 +43,31 @@
 
 /* card slider container start */
 /* .card-slider-container {
-  border: 2px solid red !important;
+    border: 2px solid red !important;
 }
 
 .card-swiper-slider {
-  padding-right: 260px;
-  border: 1px solid green;
-  width: 20%;
+    padding-right: 260px;
+    border: 1px solid green;
+    width: 20%;
 }
 
 .card-swiper-slider > .swiper-wrapper .swiper {
-  width: 100%;
-  padding-top: 50px;
+    width: 100%;
+    padding-top: 50px;
   padding-bottom: 50px;
 }
 
 .card-swiper-slider > .swiper-wrapper .swiper-slide {
-  background-position: center;
+    background-position: center;
   background-size: cover;
   width: 300px;
   height: 300px;
 }
 
 .card-swiper-slider > .swiper-wrapper .swiper-slide img {
-  display: block;
-  width: 100%;
+    display: block;
+    width: 100%;
 } */
 .card-tab-panel-container {
   width: 100%;
@@ -72,6 +80,7 @@
   border-bottom: 1px solid rgba(0, 168, 154, 0.5);
 }
 .card-tab-panel_btns button {
+  font-family: var(--primary-font) !important;
   font-size: 1.5rem;
   color: #ffffff;
   text-transform: none;
@@ -83,6 +92,7 @@
 }
 .card-tab-panel_btns .Mui-selected {
   color: #00a89b !important;
+  font-family: var(--primary-font) !important;
   font-size: 1.5rem;
   text-transform: none;
 }
@@ -154,10 +164,12 @@
 }
 
 .card-slider_author > h4 {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
   font-weight: 700;
 }
 .card-slider_author > p {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -170,10 +182,12 @@
   text-align: right;
 }
 .card-slider_body > h4 {
+  font-family: var(--primary-font) !important;
   font-size: 1.25rem;
   font-weight: 600;
 }
 .card-slider_body > p {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
   font-weight: 400;
 }
@@ -185,6 +199,7 @@
   overflow: hidden;
 }
 .card-slider_media > p {
+  font-family: var(--primary-font) !important;
   font-size: 1rem;
   color: #00887d;
   text-align: left;
@@ -198,14 +213,14 @@
 }
 
 /* .card-swiper-slider .swiper-button-prev {
-  height: 5px;
-  width: 5px;
+    height: 5px;
+    width: 5px;
 }
 .card-swiper-slider .swiper-button-prev:after {
-  content: url("../images/arrow.png");
-
-  height: 50px;
-  width: 50px;
+    content: url("../images/arrow.png");
+    
+    height: 50px;
+    width: 50px;
 } */
 
 .card-swiper-slider .swiper-button-prev:after {
@@ -237,7 +252,7 @@
   text-align: center;
   /* padding: 2rem; */
   /* background-color: #ffffff;
-  border-radius: 50%; */
+    border-radius: 50%; */
 }
 .card-swiper-slider .swiper-button-next {
   height: 2.5rem;
@@ -260,6 +275,7 @@
 
 .hero-swiper-slider-container .swiper-slide {
   height: 540px;
+  font-family: var(--primary-font) !important;
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -289,6 +305,7 @@
 }
 
 .institute-slider_title > p {
+  font-family: var(--primary-font) !important;
   font-size: 1.5rem;
   font-weight: 700;
   text-align: center;
@@ -355,6 +372,7 @@
 
 .test-slider-container .swiper-slide {
   text-align: center;
+  font-family: var(--primary-font) !important;
   font-size: 18px;
   background: #fff;
   height: 180px;
