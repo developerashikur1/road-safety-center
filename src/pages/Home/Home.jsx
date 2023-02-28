@@ -4,6 +4,7 @@ import Header from '../../components/header/Header';
 import CardSlider from './components/CardSlider';
 import HeroSlider from './components/HeroSlider';
 import InstituteSlider from './components/InstituteSlider';
+import MultiSelectorImage from './components/MultiSelectorImage';
 import TextSlider from './components/TextSlider';
 
 const Home = () => {
@@ -15,9 +16,10 @@ const Home = () => {
             <HeroSlider />
             <br /><br />
             <TextSlider />
-            <br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br /><br />
-            <br /><br /><br /><br /><br /><br />
+            <br /><br /><br /><br />
+            
+            <MultiSelectorImage />
+            
             <br /><br /><br /><br /><br /><br />
             <CardSlider />
             <br /><br />

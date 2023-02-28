@@ -398,3 +398,20 @@
 .test-slider-container .swiper-slide-next + .swiper-slide {
   z-index: 1 !important;
 }
+
+/* multiselector img section start */
+.multiselector_media-container {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  padding-left: 5rem;
+}
+.multiselector_media-container > img {
+  width: 75%;
+  transition: all 0.5s ease;
+}
+.multiselector_media-container > img:hover {
+  transform: scale(0.8);
+  cursor: pointer;
+}
+/* multiselector img section end */

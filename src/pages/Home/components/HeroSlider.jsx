@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-// import required modules
+// import required module
 import { Pagination } from "swiper";
 // Import Swiper styles
 import "swiper/css";

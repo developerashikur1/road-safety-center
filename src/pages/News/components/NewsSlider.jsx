@@ -1,6 +1,6 @@
 import ArrowLeftRoundedIcon from '@mui/icons-material/ArrowLeftRounded';
 import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded';
-import { Box, Card, CardContent, CardMedia, Grid, IconButton, Slider, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, CardMedia, Grid, IconButton, Slider, Typography } from '@mui/material';
 import React, { useState } from 'react';
 // import required modules
 import { Navigation } from "swiper";
@@ -10,6 +10,8 @@ import "swiper/css/pagination";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import newImg1 from '../../../assets/images/news-slider-images/news-img-1.png';
+import newsSliderImg from '../../../assets/images/news-slider-img.png';
+import sliderLeftLogo from '../../../assets/images/slider-left-btn.png';
 import '../../../assets/styles/News.css';
 
 
@@ -43,6 +45,31 @@ const NewsSlider = () => {
         <>
            <Box sx={{px:6}}>
             <Box>
+                <Box className='news-popup-container'>
+                    <Button className='news-swiper-prev-btn'>
+                    <img src={sliderLeftLogo} alt="" />
+                    </Button>
+                    <Box className='news-popup-elements'>
+                        <Box className='news-popup_media'>
+                            <img src={newsSliderImg} alt="" />
+                        </Box>
+                        <Box className='news-popup_contents'>
+                            <Typography variant='h4'>المركز الوطني لسلامة الطرق بالشراكة مع أمن الطرق يــطـــلـــق حـمــلـــة ” درب الـســـلامــــة “ تــزامــنــــاً مــع الإجـــازة</Typography>
+                            <Typography>
+                                دشَّن المركز الوطني لسلامة الطرق بالشراكة مع القوات الخاصة لأمن الطرق اليوم حملة ” درب السلامة ” تزامناً مع بدء موسم الإجازة بمركز الضبط الأمني بطريق الرياض / الدمام بحضور قائد القوات الخاصة لأمن الطرق اللواء خالد الضبيب ووكيل وزارة النقل المهندس طارق الشامي ورئيس المركز الوطني لسلامة الطرق الدكتور علي الغامدي
+                                وتستهدف الحملة المسافرين خلال موسم الإجازة لرفع مستوى التوعية بالسلامة المرورية عن طريق المنشورات الورقية ولوحات الطرق والمحتوى الرقمي بمواقع التواصل الاجتماعي
+                                وركزت الحملة على تعزيز التوعية بأبرز الممارسات السليمة لقائدي المركبات كضرورة ربط حزام الأمان وفحص المركبة والإطارات قبل السفر وأخذ قسط كافي من النوم، إلى جانب تعزيز التنبيه بأبرز الممارسات الخاطئة التي قد يقع فيها قائد المركبة كاستخدام الجوال والسرعة الزائدة 
+                                وركز جانب من الحملة على غرس مفاهيم سلامة الأطفال عبر استهدافهم برسائل توعوية تأسس هذه المبادئ
+                                وسيتم توسيع نطاق الحملة مستقبلاً لتشمل جميع مناطق المملكة للتوعية بالسلامة على الطرق والحفاظ على الأرواح
+                                يشار إلى أن المركز الوطني لسلامة الطرق هو أحد مبادرات برنامج التحول الوطني وبإشراف وزارة النقل
+                            </Typography>
+                            <Box className='news-expand-btn-container'>
+                                <Button>Expand</Button>
+                            </Box>
+                        </Box>
+                        <Box className='news-bg-gradiant'></Box>
+                    </Box>
+                </Box>
                 <Grid container spacing={0}>
                     <Grid item xs={3}></Grid>
                     <Grid item xs={9}>
