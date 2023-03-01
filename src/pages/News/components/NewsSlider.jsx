@@ -38,7 +38,7 @@ const newsData = [
 const NewsSlider = () => {
     const [newsAllData, setNewsAllData] = useState(newsData);
     const [activateSlider, setActivateSlider] = useState(0);
-    console.log(activateSlider)
+    const [expanded, setExpanded] = useState(false);
     // console.log( newsAllData.length)
 
     return (
@@ -46,14 +46,16 @@ const NewsSlider = () => {
            <Box sx={{px:6}}>
             <Box>
                 <Box className='news-popup-container'>
+                    {expanded && 
                     <Button className='news-swiper-prev-btn'>
                     <img src={sliderLeftLogo} alt="" />
                     </Button>
+                    }
                     <Box className='news-popup-elements'>
                         <Box className='news-popup_media'>
                             <img src={newsSliderImg} alt="" />
                         </Box>
-                        <Box className='news-popup_contents'>
+                        <Box className={`news-popup_contents ${expanded ? 'news-pupup_contents-expand' : 'news-pupup_contents-not-expand'}`}>
                             <Typography variant='h4'>المركز الوطني لسلامة الطرق بالشراكة مع أمن الطرق يــطـــلـــق حـمــلـــة ” درب الـســـلامــــة “ تــزامــنــــاً مــع الإجـــازة</Typography>
                             <Typography>
                                 دشَّن المركز الوطني لسلامة الطرق بالشراكة مع القوات الخاصة لأمن الطرق اليوم حملة ” درب السلامة ” تزامناً مع بدء موسم الإجازة بمركز الضبط الأمني بطريق الرياض / الدمام بحضور قائد القوات الخاصة لأمن الطرق اللواء خالد الضبيب ووكيل وزارة النقل المهندس طارق الشامي ورئيس المركز الوطني لسلامة الطرق الدكتور علي الغامدي
@@ -63,11 +65,15 @@ const NewsSlider = () => {
                                 وسيتم توسيع نطاق الحملة مستقبلاً لتشمل جميع مناطق المملكة للتوعية بالسلامة على الطرق والحفاظ على الأرواح
                                 يشار إلى أن المركز الوطني لسلامة الطرق هو أحد مبادرات برنامج التحول الوطني وبإشراف وزارة النقل
                             </Typography>
+                            { expanded || 
                             <Box className='news-expand-btn-container'>
-                                <Button>Expand</Button>
+                                <Button onClick={() => setExpanded(true)}>Expand</Button>
                             </Box>
+                            }
                         </Box>
+                        { expanded || 
                         <Box className='news-bg-gradiant'></Box>
+                        }
                     </Box>
                 </Box>
                 <Grid container spacing={0}>

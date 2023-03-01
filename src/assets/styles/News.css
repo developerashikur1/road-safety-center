@@ -7,6 +7,7 @@
 .news-popup-container {
   background-color: #ffffff;
   margin-bottom: 2.5rem;
+  transition: all 0.5s ease;
 }
 .news-popup-container > button {
   /* height: 3.5rem; */
@@ -51,12 +52,17 @@
   padding-right: 10%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  position: absolute;
+}
+
+.news-pupup_contents-not-expand {
   bottom: 0;
+  position: absolute;
   left: 0;
   right: 0;
   color: #ffffff !important;
   z-index: 11;
+}
+.news-pupup_contents-expand {
 }
 
 .news-popup_contents > h4 {
