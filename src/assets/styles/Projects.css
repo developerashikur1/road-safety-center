@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --primary-font: "Open Sans", sans-serif;
+}
+
+.pjt-section-container > p {
+  font-size: var(--primary-font);
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.pjt-top-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+.pjt-middle-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #55555535;
+}
+.pjt-bottom-section {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.pjt-right_content > h4 {
+  font-size: var(--primary-font);
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+.pjt-right_content > p {
+  font-size: var(--primary-font);
+  color: #ffffff;
+  font-size: 1rem;
+  text-align: right;
+  margin-bottom: 1rem;
+}
+
+.pjt-right_media > img {
+  width: 100%;
+}

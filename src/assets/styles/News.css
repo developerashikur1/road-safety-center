@@ -232,4 +232,10 @@
 .news-swiper-slider-pagination > .MuiSlider-root .MuiSlider-thumb {
   display: none !important;
 }
+
+.new-tab-panel-container {
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 2.5rem;
+}
 /* news slider end */

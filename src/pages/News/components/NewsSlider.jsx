@@ -1,6 +1,6 @@
 import ArrowLeftRoundedIcon from '@mui/icons-material/ArrowLeftRounded';
 import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded';
-import { Box, Button, Card, CardContent, CardMedia, Grid, IconButton, Slider, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, CardMedia, Grid, IconButton, Slider, Tab, Tabs, Typography } from '@mui/material';
 import React, { useState } from 'react';
 // import required modules
 import { Navigation } from "swiper";
@@ -40,10 +40,29 @@ const NewsSlider = () => {
     const [activateSlider, setActivateSlider] = useState(0);
     const [expanded, setExpanded] = useState(false);
     // console.log( newsAllData.length)
+    const [value, setValue] = React.useState('one');
 
+    const handleChange = (event, newValue) => {
+      setValue(newValue);
+    };
+    
     return (
         <>
            <Box sx={{px:6}}>
+            <Box className='new-tab-panel-container'>
+                <Tabs
+                    value={value}
+                    onChange={handleChange}
+                    textColor="secondary"
+                    indicatorColor="secondary"
+                    aria-label="secondary tabs example"
+                    className='card-tab-panel_btns'
+                >
+                    <Tab value="one" label="التوعية" />
+                    <Tab value="two" label="الاخبار" />
+                    <Tab value="three" label="الفعاليات" />
+                </Tabs>
+            </Box>
             <Box>
                 <Box className='news-popup-container'>
                     {expanded && 
@@ -97,9 +116,9 @@ const NewsSlider = () => {
                                 {newsAllData.map((data, index) =>
                                 <SwiperSlide key={index}>
                                     <Box>
-                                        <Card className='news-card-container' sx={{ maxWidth: 445, minHeight: 380 }}>
+                                        <Card className='news-card-container' sx={{ maxWidth: 445, minHeight: 420 }}>
                                             <CardMedia
-                                                sx={{ height: 180 }}
+                                                sx={{ height: 220 }}
                                                 image={data.img}
                                                 title="green iguana"
                                             />

@@ -6,7 +6,7 @@ import '../../../assets/styles/Home.css';
 const MultiSelectorImage = () => {
     return (
         <>
-        <Container>s
+        <Container>
             <Box className='multiselector_media-container'>
                 <img src={multiselectorImg} alt="" />
             </Box>   

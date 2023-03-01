@@ -53,22 +53,22 @@
   color: #ffffff !important;
   /* font-size: 1.875rem !important; */
   font-family: var(--primary-font) !important;
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
   text-transform: none !important;
   border-radius: 0 !important;
-  border-bottom: 4px solid transparent !important;
+  border-bottom: 2px solid transparent !important;
   transition: all 0.5s !important;
 }
 
 .header-menu-btn:hover {
   color: #00a89b !important;
-  border-bottom: 4px solid #00a89b !important;
+  border-bottom: 2px solid #00a89b !important;
   transition: all 0.3s !important;
 }
 
 .header-menus-container > div .activated {
   color: #00a89b !important;
-  border-bottom: 4px solid #00a89b !important;
+  border-bottom: 2px solid #00a89b !important;
   transition: all 0.3s !important;
 }
 

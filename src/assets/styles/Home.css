@@ -147,6 +147,7 @@
 
 .card-slider-box {
   padding: 1.5rem;
+  max-height: 320px;
   width: 100%;
 }
 
@@ -178,7 +179,7 @@
 }
 
 .card-slider_body {
-  margin-top: 5rem;
+  margin-top: 2.5rem;
   text-align: right;
 }
 .card-slider_body > h4 {
@@ -193,7 +194,7 @@
 }
 
 .card-slider_media {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   max-height: 10rem;
   width: 100%;
   overflow: hidden;
@@ -411,7 +412,7 @@
   transition: all 0.5s ease;
 }
 .multiselector_media-container > img:hover {
-  transform: scale(0.8);
+  transform: scale(1.2);
   cursor: pointer;
 }
 /* multiselector img section end */
