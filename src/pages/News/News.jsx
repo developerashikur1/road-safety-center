@@ -12,9 +12,6 @@ const News = () => {
     return (
         <>
             <Header />
-            <br /><br />
-            
-            <br /><br /><br /><br /><br />
             
             <NewsSlider />
             <br /><br /><br /><br /><br /><br />

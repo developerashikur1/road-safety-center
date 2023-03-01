@@ -8,7 +8,7 @@ const ProjectSection = () => {
         <>
             {/* <Container> */}
                 <Box className='pjt-section-container'>
-                    <Typography>Lorem Ipsum</Typography>
+                    <Typography>الضبيب ووكيل</Typography>
 
                     <Box className='pjt-top-section'>
                     <Container>
