@@ -1,0 +1,23 @@
+/* service card section start */
+.service-cards {
+  background-color: transparent !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+.service-card_media {
+  border-radius: 10px !important;
+}
+.service-card_content {
+  padding: 0 !important;
+  margin-top: 1.5rem;
+  text-align: right;
+}
+.service-card_content > h5 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.service-card_content > p {
+  color: #ffffff;
+}
+/* service card section end */

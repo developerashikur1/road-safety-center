@@ -115,7 +115,8 @@
   /* align-items: center; */
 }
 
-.card-swiper-slider {
+.card-swiper-slider .swiper-slide {
+  max-width: 375px !important;
 }
 
 .card-slider-container .swiper-slide img {
