@@ -79,3 +79,63 @@
 .header-menu-logo-container img {
   height: 5rem;
 }
+
+/* responsive header */
+.responsive-header-menu-container {
+  background-color: transparent !important;
+}
+
+.responsive-drawer .MuiPaper-root {
+  background: rgb(0, 92, 120) !important;
+  background: radial-gradient(
+    circle,
+    rgba(0, 92, 120, 1) 0%,
+    rgba(0, 12, 15, 1) 100%
+  ) !important;
+  /* position: relative; */
+}
+
+.responsive-header-menus {
+  position: relative;
+}
+
+.responsive-drawer-close-btn {
+  position: absolute;
+  right: -75%;
+  top: 7%;
+}
+.responsive-drawer-close-btn > .MuiSvgIcon-root {
+  color: #ffffff !important;
+}
+
+.responsive-menus-container {
+  padding-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+.responsive-menus-container > a {
+  font-family: var(--primary-font) !important;
+  text-decoration: none;
+}
+.responsive-menus-container {
+}
+/* css media query */
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (max-width: 992px) {
+  .header-container {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .responsive-header-menu-container {
+    display: none !important;
+  }
+}
