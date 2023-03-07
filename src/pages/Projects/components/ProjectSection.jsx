@@ -13,7 +13,7 @@ const ProjectSection = () => {
                     <Box className='pjt-top-section'>
                     <Container>
                         <Grid alignItems='center' container spacing={3}>
-                            <Grid item xs={7}>
+                            <Grid item xs={12} md={7} order={{xs: 2, md:1 }} >
                                 <Box className='pjt-right_content'>
                                 <Typography variant="h4">الضبيب ووكيل</Typography>
                                     <Typography>
@@ -26,7 +26,7 @@ const ProjectSection = () => {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid item xs={5}>
+                            <Grid item xs={12} md={5} order={{xs:1, md:2}} >
                                 <Box className='pjt-right_media'>
                                     <img src={projectImg1} alt="" />
                                 </Box>
@@ -38,12 +38,12 @@ const ProjectSection = () => {
                     <Box className='pjt-middle-section'>
                     <Container>
                         <Grid alignItems='center' container spacing={3}>
-                            <Grid item xs={5}>
+                            <Grid item xs={12} md={5}>
                                 <Box className='pjt-right_media'>
                                     <img src={projectImg1} alt="" />
                                 </Box>
                             </Grid>
-                            <Grid item xs={7}>
+                            <Grid item xs={12} md={7}>
                                 <Box className='pjt-right_content'>
                                 <Typography variant="h4">الضبيب ووكيل</Typography>
                                     <Typography>
@@ -58,7 +58,7 @@ const ProjectSection = () => {
                             </Grid>
                         </Grid>
                         <Grid sx={{mt:12}} alignItems='center' container spacing={3}>
-                            <Grid item xs={7}>
+                            <Grid item xs={12} md={7} order={{xs:6, md:5}} >
                                 <Box className='pjt-right_content'>
                                 <Typography variant="h4">الضبيب ووكيل</Typography>
                                     <Typography>
@@ -71,7 +71,7 @@ const ProjectSection = () => {
                                     </Typography>
                                 </Box>
                             </Grid>
-                            <Grid item xs={5}>
+                            <Grid item xs={12} md={5} order={{xs:5, md:6}} >
                                 <Box className='pjt-right_media'>
                                     <img src={projectImg1} alt="" />
                                 </Box>
@@ -82,12 +82,12 @@ const ProjectSection = () => {
                     <Box className='pjt-bottom-section'>
                     <Container>
                         <Grid alignItems='center' container spacing={3}>
-                            <Grid item xs={5}>
+                            <Grid item xs={12} md={5}>
                                 <Box className='pjt-right_media'>
                                     <img src={projectImg1} alt="" />
                                 </Box>
                             </Grid>
-                            <Grid item xs={7}>
+                            <Grid item xs={12} md={7}>
                                 <Box className='pjt-right_content'>
                                 <Typography variant="h4">الضبيب ووكيل</Typography>
                                     <Typography>
