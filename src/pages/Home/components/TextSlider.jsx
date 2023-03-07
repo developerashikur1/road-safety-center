@@ -41,15 +41,15 @@ const texts =[
                         <SwiperSlide key={text.id}>
                             <Box className='text-slider-container'>
                                 <Grid alignItems="center" container spacing={0}>
-                                    <Grid item xs={3}></Grid>
-                                    <Grid item xs={6}>
+                                    <Grid item xs={1.5} md={3}></Grid>
+                                    <Grid item xs={9} md={6}>
                                         <Box className="text-swiper-slider_content-Box">
                                             <Typography variant="h4">{text.title}</Typography>
                                             <Typography>{text.text}</Typography>
                                         </Box>
                                     </Grid>
                                 </Grid>
-                                <Grid item xs={3}></Grid>
+                                <Grid item xs={1.5} md={3}></Grid>
                             </Box>
                         </SwiperSlide>
                     )}

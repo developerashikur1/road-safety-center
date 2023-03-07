@@ -149,6 +149,7 @@
 .card-slider-box {
   padding: 1.5rem;
   max-height: 320px;
+  overflow: hidden;
   width: 100%;
 }
 
@@ -417,3 +418,36 @@
   cursor: pointer;
 }
 /* multiselector img section end */
+
+/* css media query */
+/* Medium devices (landscape tablets, 768px and down) */
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+  .hero-swiper-slider-container .swiper-slide {
+    height: 440px;
+  }
+  .card-slider-container .swiper {
+    width: 65% !important;
+  }
+  .multiselector_media-container {
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .hero-swiper-slider-container .swiper-slide {
+    height: 320px;
+  }
+  .card-slider-container .swiper {
+    width: 90% !important;
+  }
+  .multiselector_media-container {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
