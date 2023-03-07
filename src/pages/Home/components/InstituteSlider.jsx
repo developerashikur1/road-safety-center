@@ -58,6 +58,24 @@ const InstituteSlider = () => {
                     spaceBetween={10}
                     freeMode={true}
                     loop={true}
+                    breakpoints={{
+                    0:{
+                        slidesPerView: 3,
+                        spaceBetween: 10,
+                    },
+                    640: {
+                        slidesPerView: 4,
+                        spaceBetween: 10,
+                    },
+                    768: {
+                        slidesPerView: 7,
+                        spaceBetween: 10,
+                    },
+                    1024: {
+                        slidesPerView: 9,
+                        spaceBetween: 10,
+                    },
+                    }}
                     navigation={{
                     clickable: true,
                     }}
