@@ -48,7 +48,7 @@ const NewsSlider = () => {
     
     return (
         <>
-           <Box sx={{px:6}}>
+           <Box sx={{px:{xs:2, sm:3, md:6}}}>
             <Box className='new-tab-panel-container'>
                 <Tabs
                     value={value}
