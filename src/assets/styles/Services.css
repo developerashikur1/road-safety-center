@@ -27,13 +27,13 @@
   color: #ffffff;
 }
 .service-card_content > button {
-  color: #ffffff;
-  border: 1px solid #ffffff75;
+  color: #ffffff !important;
+  border: 1px solid #ffffff75 !important;
   border-radius: 50px;
-  font-size: 1rem;
+  font-size: 1rem !important;
   height: 1.75rem;
 }
 .service-card_content > button .MuiSvgIcon-root {
-  font-size: 1rem;
+  font-size: 1rem !important;
 }
 /* service card section end */
