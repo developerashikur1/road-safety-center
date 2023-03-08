@@ -75,7 +75,8 @@ const NewsSlider = () => {
                         <Box className='news-popup_media'>
                             <img src={newsSliderImg} alt="" />
                         </Box>
-                        <Box className={`news-popup_contents ${expanded ? 'news-pupup_contents-expand' : 'news-pupup_contents-not-expand'}`}>
+                        {/* <Box className={`news-popup_contents ${expanded ? 'news-pupup_contents-expand' : 'news-pupup_contents-not-expand'}`}> */}
+                        <Box className='news-popup_contents news-pupup_contents-not-expand'>
                             <Typography variant='h4'>المركز الوطني لسلامة الطرق بالشراكة مع أمن الطرق يــطـــلـــق حـمــلـــة ” درب الـســـلامــــة “ تــزامــنــــاً مــع الإجـــازة</Typography>
                             <Typography>
                                 دشَّن المركز الوطني لسلامة الطرق بالشراكة مع القوات الخاصة لأمن الطرق اليوم حملة ” درب السلامة ” تزامناً مع بدء موسم الإجازة بمركز الضبط الأمني بطريق الرياض / الدمام بحضور قائد القوات الخاصة لأمن الطرق اللواء خالد الضبيب ووكيل وزارة النقل المهندس طارق الشامي ورئيس المركز الوطني لسلامة الطرق الدكتور علي الغامدي
@@ -85,15 +86,15 @@ const NewsSlider = () => {
                                 وسيتم توسيع نطاق الحملة مستقبلاً لتشمل جميع مناطق المملكة للتوعية بالسلامة على الطرق والحفاظ على الأرواح
                                 يشار إلى أن المركز الوطني لسلامة الطرق هو أحد مبادرات برنامج التحول الوطني وبإشراف وزارة النقل
                             </Typography>
-                            { expanded || 
+                            {/* { expanded ||  */}
                             <Box className='news-expand-btn-container'>
-                                <Link to={`/single-news/${1}`} ><Button onClick={() => setExpanded(true)}>Expand</Button></Link>
+                                <Link to={`/single-news/${newsAllData[activateSlider]?.id}`} ><Button onClick={() => setExpanded(true)}>Expand</Button></Link>
                             </Box>
-                            }
+                            {/* } */}
                         </Box>
-                        { expanded || 
+                        {/* { expanded ||  */}
                         <Box className='news-bg-gradiant'></Box>
-                        }
+                        {/* } */}
                     </Box>
                 </Box>
                 <Grid container spacing={0}>

@@ -101,7 +101,7 @@
   background-color: #00a89b !important;
 }
 .card-slider-container .swiper {
-  width: 50%;
+  width: 55%;
   height: 100%;
 }
 
@@ -126,16 +126,17 @@
   object-fit: cover;
 }
 .card-slider-container .swiper-slide-prev {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: #00a89b;
   z-index: 9 !important;
 }
 .card-slider-container .swiper-slide-active {
-  background-color: #ffffff;
-  z-index: 10 !important;
-}
-.card-slider-container .swiper-slide-next {
   background-color: #00a89b;
   z-index: 9 !important;
+}
+.card-slider-container .swiper-slide-next {
+  background-color: #ffffff;
+  z-index: 10 !important;
 }
 .card-slider-container .swiper-slide-next + .swiper-slide {
   background-color: #00887d;
@@ -450,4 +451,11 @@
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1300px) {
+  .card-slider-container .swiper {
+    width: 40%;
+    height: 100%;
+  }
 }
