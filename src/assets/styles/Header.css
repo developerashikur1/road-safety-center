@@ -15,7 +15,7 @@
   display: flex;
   align-items: center;
   gap: 1.5rem;
-  justify-content: start;
+  justify-content: center;
 }
 
 .header-lang-search-container > p {
