@@ -1,7 +1,6 @@
 import { Box } from '@mui/material';
 import React from 'react';
-// import required module
-import { Pagination } from "swiper";
+import { Autoplay } from 'swiper';
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
@@ -32,7 +31,12 @@ const HeroSlider = () => {
                 <Swiper 
                     pagination={true} 
                     loop={true}
-                    modules={[Pagination]} 
+                    speed={800}
+                    autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                    }}
+                    modules={[Autoplay]} 
                     className="hero-swiper-slider"
                 >
                     {heroSlidersImage.map((hero) => 

@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <Box className="header-container">
-        <Grid alignItems="center" container spacing={0}>
+        <Grid alignItems="flex-end" container spacing={0}>
           <Grid item xs={3}>
             <Box className="header-lang-search-container">
               <Typography>EN</Typography>

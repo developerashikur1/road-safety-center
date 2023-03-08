@@ -2,6 +2,7 @@ import ArrowLeftRoundedIcon from '@mui/icons-material/ArrowLeftRounded';
 import ArrowRightRoundedIcon from '@mui/icons-material/ArrowRightRounded';
 import { Box, Button, Card, CardContent, CardMedia, Grid, IconButton, Slider, Tab, Tabs, Typography } from '@mui/material';
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 // import required modules
 import { Navigation } from "swiper";
 // Import Swiper styles
@@ -86,7 +87,7 @@ const NewsSlider = () => {
                             </Typography>
                             { expanded || 
                             <Box className='news-expand-btn-container'>
-                                <Button onClick={() => setExpanded(true)}>Expand</Button>
+                                <Link to={`/single-news/${1}`} ><Button onClick={() => setExpanded(true)}>Expand</Button></Link>
                             </Box>
                             }
                         </Box>
@@ -96,14 +97,34 @@ const NewsSlider = () => {
                     </Box>
                 </Box>
                 <Grid container spacing={0}>
-                    <Grid item xs={3}></Grid>
-                    <Grid item xs={9}>
+                    <Grid item xs={12} sm={1.5} md={3}></Grid>
+                    <Grid item xs={12} sm={10.5} md={9}>
                         <Box>
                             <Swiper
-                                slidesPerView={4}
+                                slidesPerView={3}
                                 spaceBetween={15}
                                 speed={800}
+                                breakpoints={{
+                                0:{
+                                    slidesPerView: 1,
+                                    spaceBetween: 15,
+                                },
+                                421: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 15,
+                                },
+                                768: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 15,
+                                },
+                                1024: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 15,
+                                },
+                                }}
+                                
                                 centeredSlides={true}
+        
                                 navigation={{
                                     // clickable:true,
                                     prevEl:'.news-swiper-prev-btn',
