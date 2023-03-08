@@ -136,7 +136,7 @@
   > div
   .css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input,
 .css-1x5jdmq {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 .news-form-child-container > div p {
   font-family: var(--primary-font) !important;
