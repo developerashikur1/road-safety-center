@@ -1,5 +1,8 @@
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
-import { Box, Button, Card, CardContent, CardMedia, Grid, Typography } from '@mui/material';
+import { Box, Button, ButtonGroup, Card, CardContent, CardMedia, Grid, TextField, Typography } from '@mui/material';
+import FormControl from '@mui/material/FormControl';
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 import React from 'react';
 import cardImg from '../../../assets/images/hero-slider/heroimg-5.jpg';
 import '../../../assets/styles/Services.css';
@@ -33,6 +36,7 @@ const servicesAll = [
 ]
 
 const ServiceCard = () => {
+    
 
     const handleDownloadImg = (imgUrl, imgTitle) => {
         // create an <a> element with the image data and download attribute
@@ -43,8 +47,45 @@ const ServiceCard = () => {
         link.click();
       };
 
+      const [age, setAge] = React.useState('');
+
+  const handleChange = (event) => {
+    setAge(event.target.value);
+  };
+
+
     return (
         <>
+            <Box className='sv-sorting-container' sx={{pb:6}}>
+                <Grid alignItems='center' container spacing={3}>
+                    <Grid item xs={2}>
+                        <ButtonGroup className='sv-variant-btn' variant="text" aria-label="text button group">
+                            <Button>Newest</Button>
+                            <Button>Oldest</Button>
+                        </ButtonGroup>
+                    </Grid>
+                    <Grid item xs={7}>
+                        <TextField className='sv-search-filed' fullWidth placeholder='Search' variant="outlined" />
+                    </Grid>
+                    <Grid item xs={3}>
+                        <Box className='sv-sorting-filter'>
+                            <Typography>Filter: </Typography>
+                            <FormControl fullWidth>
+                                <Select
+                                    // labelId="demo-simple-select-label"
+                                    // id="demo-simple-select"
+                                    value={age}
+                                    onChange={handleChange}
+                                >
+                                    <MenuItem value={10}>Ten</MenuItem>
+                                    <MenuItem value={20}>Twenty</MenuItem>
+                                    <MenuItem value={30}>Thirty</MenuItem>
+                                </Select>
+                            </FormControl>
+                        </Box>
+                    </Grid>
+                </Grid>
+            </Box>
             <Box >
                 <Grid container spacing={3}>
                     {servicesAll.map((service, index) => 

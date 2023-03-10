@@ -37,3 +37,44 @@
   font-size: 1rem !important;
 }
 /* service card section end */
+
+/* services filter option start */
+.sv-sorting-filter {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.sv-sorting-filter .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #ffffff !important;
+}
+
+.sv-sorting-filter .MuiSvgIcon-root {
+  color: #ffffff !important;
+}
+.sv-sorting-filter .MuiSelect-select {
+  color: #ffffff !important;
+}
+
+.sv-sorting-filter > p {
+  color: #ffffff !important;
+  font-size: 1.2rem !important;
+}
+.sv-sorting-filter > .MuiFormControl-root {
+  color: #ffffff !important;
+}
+
+.sv-variant-btn > button {
+  color: #ffffff !important;
+  font-size: 1.2rem !important;
+  text-transform: none !important;
+}
+
+.sv-search-filed .MuiOutlinedInput-notchedOutline {
+  border: 1px solid #ffffff !important;
+}
+.sv-search-filed .MuiInputBase-input {
+  color: #ffffff !important;
+  font-size: 1.2rem !important;
+}
+/* services filter option end */
