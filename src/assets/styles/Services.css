@@ -78,6 +78,10 @@
   border-radius: 50px !important;
   background-color: #00354589 !important;
 }
+.sv-sorting-filter > .MuiOutlinedInput-notchedOutline {
+  height: 2.75rem !important;
+  border-radius: 50px !important;
+}
 
 .sv-variant-btn > button {
   color: #ffffff !important;
