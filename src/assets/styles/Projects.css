@@ -40,6 +40,22 @@
   margin-bottom: 1rem;
 }
 
+.pjt-content_btn {
+  text-align: right;
+  margin-top: 1.5rem;
+}
+
+.pjt-content_btn > button {
+  text-transform: none;
+  color: #ffffff !important;
+  border: 1px solid #ffffff75 !important;
+  border-radius: 50px;
+  font-size: 1rem !important;
+  /* height: 1.75rem; */
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 .pjt-right_media > img {
   width: 100%;
 }
