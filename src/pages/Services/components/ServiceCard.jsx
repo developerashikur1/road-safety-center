@@ -57,7 +57,7 @@ const ServiceCard = () => {
     return (
         <>
             <Box className='sv-sorting-container' sx={{pb:6}}>
-                <Grid alignItems='center' justifyContent='center' container spacing={3}>
+                <Grid alignItems='center' justifyContent='center' textAlign='center' container spacing={3}>
                     <Grid item xs={12} md={2}>
                         <ButtonGroup className='sv-variant-btn' variant="text" aria-label="text button group">
                             <Button size='small'>Newest</Button>
