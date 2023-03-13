@@ -57,17 +57,17 @@ const ServiceCard = () => {
     return (
         <>
             <Box className='sv-sorting-container' sx={{pb:6}}>
-                <Grid alignItems='center' container spacing={3}>
-                    <Grid item xs={2}>
+                <Grid alignItems='center' justifyContent='center' container spacing={3}>
+                    <Grid item xs={12} md={2}>
                         <ButtonGroup className='sv-variant-btn' variant="text" aria-label="text button group">
                             <Button size='small'>Newest</Button>
                             <Button size='small'>Oldest</Button>
                         </ButtonGroup>
                     </Grid>
-                    <Grid item xs={7}>
+                    <Grid item xs={12} md={7}>
                         <TextField className='sv-search-filed' fullWidth placeholder='Search' variant="outlined" />
                     </Grid>
-                    <Grid item xs={3}>
+                    <Grid item xs={12} md={3}>
                         <Box className='sv-sorting-filter'>
                             <Typography>Filter: </Typography>
                             <FormControl fullWidth>
