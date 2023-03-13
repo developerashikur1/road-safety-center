@@ -58,23 +58,36 @@
 
 .sv-sorting-filter > p {
   color: #ffffff !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
 }
 .sv-sorting-filter > .MuiFormControl-root {
   color: #ffffff !important;
+  height: 2.75rem !important;
+  border-radius: 50px !important;
+  background-color: #00354589 !important;
+}
+.sv-sorting-filter > .css-fvipm8 {
+  color: #ffffff !important;
+  height: 2.75rem !important;
+  border-radius: 50px !important;
+  background-color: #00354589 !important;
 }
 
 .sv-variant-btn > button {
   color: #ffffff !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
   text-transform: none !important;
 }
 
 .sv-search-filed .MuiOutlinedInput-notchedOutline {
   border: 1px solid #ffffff !important;
+  border-radius: 50px !important;
 }
 .sv-search-filed .MuiInputBase-input {
   color: #ffffff !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
+  height: 0.5rem !important;
+  border-radius: 50px !important;
+  background-color: #00354589 !important;
 }
 /* services filter option end */

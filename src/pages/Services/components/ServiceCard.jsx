@@ -60,8 +60,8 @@ const ServiceCard = () => {
                 <Grid alignItems='center' container spacing={3}>
                     <Grid item xs={2}>
                         <ButtonGroup className='sv-variant-btn' variant="text" aria-label="text button group">
-                            <Button>Newest</Button>
-                            <Button>Oldest</Button>
+                            <Button size='small'>Newest</Button>
+                            <Button size='small'>Oldest</Button>
                         </ButtonGroup>
                     </Grid>
                     <Grid item xs={7}>
